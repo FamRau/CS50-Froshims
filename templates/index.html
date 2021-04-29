@@ -2,18 +2,17 @@
 
 {% block body %}
 
-    <h1>Register</h1>
+<h1>Register</h1>
 
-    <form action="/" method="POST">
-        <input type="text" name="name" autofocus autocomplete="off" placeholder="name" required="true">
-        <select name="sport" id="selectsport" required="true">
-            <option value="" disabled selected>--Sports--</option>
-            {% for sports in sports  %}
-                <option value="{{ sports }}"> {{ sports }}</option>
-            {% endfor %}
+<form action="/register" method="POST">
+    <input type="text" name="name" autofocus autocomplete="off" placeholder="name">
+    <select name="sport">
+        <option value="" disabled selected>Sport</option>
+        {% for sport in sports %}
+            <option value="{{ sport }}">{{ sport }}</option>
+         {% endfor %}   
+    </select>
+    <input type="submit" value="Register">
+</form>
 
-        </select>
-        <input type="submit" value="Register">
-    </form>
-
-{% endblock  body %}
+{% endblock %}
