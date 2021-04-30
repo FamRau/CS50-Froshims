@@ -5,7 +5,7 @@
 <h1>Register</h1>
 
 <form action="/register" method="POST">
-    <input type="text" name="name" autofocus autocomplete="off" placeholder="name">
+    <input type="email" name="email" autofocus autocomplete="off" placeholder="email">
     <select name="sport">
         <option value="" disabled selected>Sport</option>
         {% for sport in sports %}

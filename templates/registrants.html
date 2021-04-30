@@ -10,10 +10,10 @@
         <th>Sport</th>
     </thead>
     <tbody>
-        {% for name in registrants %}
+        {% for row in rows %}
             <tr>
-                <td>{{ name }}</td>
-                <td>{{ registrants[name] }}</td>
+                <td>{{ row.name }}</td>
+                <td>{{ row.sport }}</td>
             </tr>
         {% endfor %}
     </tbody>
