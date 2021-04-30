@@ -1,0 +1,15 @@
+{
+    "coffeebreak.emails": [
+        "gerhard.rauniak@gmail.com"
+    ],
+    "coffeebreak.mentions": {
+        "Gerhard": {
+            "email": "gerhard.rauniak@gmail.com"
+        }
+    },
+    "coffeebreak.sync": {
+        "command": "coffeebreak.todoist.sync",
+        "project_id": 2236186073,
+        "label_ids": []
+    }
+}
